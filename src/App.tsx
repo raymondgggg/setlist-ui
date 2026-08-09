@@ -5,27 +5,12 @@ import {
   Box,
   AppBar,
   Toolbar,
-  CssBaseline,
 } from '@mui/material'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-
-const theme = createTheme({
-  palette: {
-    mode: 'light',
-    primary: {
-      main: '#1976d2',
-    },
-    secondary: {
-      main: '#dc004e',
-    },
-  },
-})
 
 function App() {
-  console.log('test')
+
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    <>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -45,7 +30,7 @@ function App() {
           </Button>
         </Box>
       </Container>
-    </ThemeProvider>
+    </>
   )
 }
 
