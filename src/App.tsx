@@ -3,21 +3,12 @@ import {
   Typography,
   Button,
   Box,
-  AppBar,
-  Toolbar,
 } from '@mui/material'
 
 function App() {
 
   return (
     <>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            My App
-          </Typography>
-        </Toolbar>
-      </AppBar>
       <Container maxWidth="md">
         <Box sx={{ mt: 8, textAlign: 'center' }}>
           <Typography variant="h3" gutterBottom>
