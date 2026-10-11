@@ -4,6 +4,7 @@ import { SetContextLink } from "@apollo/client/link/context";
 // GraphQL endpoint configuration
 const httpLink = new HttpLink({
   uri: import.meta.env.VITE_GRAPHQL_URL, // Your GraphQL server URL
+  credentials: "include", // send/receive the refresh-token cookie cross-origin
 });
 
 // Authentication header setup (JWT tokens, etc.)
