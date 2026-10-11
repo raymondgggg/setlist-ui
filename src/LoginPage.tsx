@@ -10,6 +10,7 @@ import { useNavigate } from "@tanstack/react-router";
 import { type SyntheticEvent, useState } from "react";
 import { useLoginMutation } from "./gql/generated";
 
+// REQUIRES END TO END TESTING
 function LoginPage() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
